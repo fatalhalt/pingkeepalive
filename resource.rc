@@ -1,0 +1,23 @@
+#include "resource.h"
+
+ICO1 ICON DISCARDABLE "pingy.ico"
+
+IDC_MYAPP MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Clear",               IDM_CLEAR
+        MENUITEM "E&xit",                IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",           IDM_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+  IDC_MYAPP "MyApp"
+  IDS_MYAPP_TITLE "PING Keep Alive"
+  IDS_MYAPP_ABOUT "PING Keep Alive v0.1\r\nA background IPv4 pinger\r\nhttps://github.com/fatalhalt/pingkeepalive"
+END
